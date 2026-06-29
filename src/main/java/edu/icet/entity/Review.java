@@ -1,14 +1,18 @@
-package edu.icet.dto;
+package edu.icet.entity;
 
+import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.stereotype.Service;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Getter
 @Setter
-public class ReviewDto {
+@Entity
+@Table(name = "review")
+public class Review {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Long projectId;
