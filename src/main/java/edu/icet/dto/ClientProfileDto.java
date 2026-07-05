@@ -1,5 +1,5 @@
-package edu.icet.entity;
-import jakarta.persistence.*;
+package edu.icet.dto;
+
 import lombok.*;
 
 @Getter
@@ -7,11 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Entity
-@Table(name = "clientTable")
-public class ClientPortfolio {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class ClientProfileDto {
     private Long id;
 
     private Long userId;
