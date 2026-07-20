@@ -13,12 +13,16 @@ public class ClientProfile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private Long userId;
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private User user;
 
     private String companyName;
 
     private String companyDescription;
 
     private String websiteUrl;
+
+    private String country;
+
 }

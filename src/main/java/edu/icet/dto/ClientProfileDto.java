@@ -17,4 +17,6 @@ public class ClientProfileDto {
     private String companyDescription;
 
     private String websiteUrl;
+
+    private String country;
 }

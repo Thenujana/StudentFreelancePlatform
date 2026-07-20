@@ -13,8 +13,8 @@ public class DeveloperProfile {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private Long userId;
+    @OneToOne
+    private User user;
 
     private String university;
 
