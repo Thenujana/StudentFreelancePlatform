@@ -7,9 +7,13 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
 public class SkillDto {
 
     private Long id;
 
     private String skillName;
+
+    private String category;
+
 }

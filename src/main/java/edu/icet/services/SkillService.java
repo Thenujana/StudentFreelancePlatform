@@ -5,6 +5,7 @@ import edu.icet.dto.SkillDto;
 import java.util.List;
 
 public interface SkillService {
+
     void addSkill(SkillDto skillDto);
 
     void updateSkill(SkillDto skillDto);
@@ -12,4 +13,7 @@ public interface SkillService {
     void deleteSkill(Long id);
 
     List<SkillDto> getAll();
+
+    List<SkillDto> searchSkill(String skillName);
+
 }
