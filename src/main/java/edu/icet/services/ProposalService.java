@@ -5,13 +5,21 @@ import edu.icet.dto.ProposalDto;
 import java.util.List;
 
 public interface ProposalService {
-    void submitProposal(ProposalDto proposalDto);
 
-    void updateProposal(ProposalDto proposalDto);
+    void addProposal(ProposalDto dto);
+
+    void updateProposal(ProposalDto dto);
 
     void deleteProposal(Long id);
 
-    List<ProposalDto> getByProject(Long projectId);
+    List<ProposalDto> getAllProposals();
 
-    List<ProposalDto> getByDeveloper(Long developerId);
+    ProposalDto searchProposal(Long id);
+
+    List<ProposalDto> getProposalsByProject(Long projectId);
+
+    List<ProposalDto> getProposalsByDeveloper(Long developerProfileId);
+
+    List<ProposalDto> getProposalsByStatus(String status);
+
 }

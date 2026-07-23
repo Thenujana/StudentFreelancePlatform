@@ -1,8 +1,5 @@
 package edu.icet.dto;
 
-import edu.icet.entity.Project;
-import edu.icet.entity.Skill;
-import jakarta.persistence.ManyToOne;
 import lombok.*;
 
 @Getter
@@ -10,10 +7,13 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
 public class ProjectSkillDto {
+
     private Long id;
 
-    private Project project;
+    private Long projectId;
 
-    private Skill skill;
+    private Long skillId;
+
 }

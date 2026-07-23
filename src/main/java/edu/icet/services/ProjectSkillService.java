@@ -6,9 +6,12 @@ import java.util.List;
 
 public interface ProjectSkillService {
 
-    void addProjectSkill(ProjectSkillDto projectSkillDto);
+    void addProjectSkill(ProjectSkillDto dto);
+
+    void updateProjectSkill(ProjectSkillDto dto);
 
     void deleteProjectSkill(Long id);
 
-    List<ProjectSkillDto> getByProject(Long projectId);
+    List<ProjectSkillDto> getProjectSkills(Long projectId);
+
 }
