@@ -16,7 +16,7 @@ public class DeveloperSkill {
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "developer_profile_id")
+
     private DeveloperProfile developerProfile;
 
     @ManyToOne

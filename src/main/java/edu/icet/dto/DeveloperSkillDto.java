@@ -14,13 +14,7 @@ import lombok.*;
 public class DeveloperSkillDto {
 
     private Long id;
-
-
-    private DeveloperProfile developerProfile;
-
-
-
-    private Skill skill;
-
+    private Long developerProfileId;
+    private Long skillId;
     private String proficiencyLevel;
 }

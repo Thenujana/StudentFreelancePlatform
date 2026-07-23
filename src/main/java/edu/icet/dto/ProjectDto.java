@@ -3,15 +3,18 @@ package edu.icet.dto;
 import lombok.*;
 
 import java.time.LocalDate;
+
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
+
 public class ProjectDto {
+
     private Long id;
 
-    private Long clientId;
+    private Long clientProfileId;
 
     private String title;
 
@@ -21,5 +24,12 @@ public class ProjectDto {
 
     private LocalDate deadline;
 
+    private String experienceLevel;
+
+    private String projectType;
+
     private String status;
+
+    private LocalDate createdDate;
+
 }

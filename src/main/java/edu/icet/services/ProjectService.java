@@ -5,13 +5,21 @@ import edu.icet.dto.ProjectDto;
 import java.util.List;
 
 public interface ProjectService {
-    void addProject(ProjectDto projectDto);
 
-    void updateProject(ProjectDto projectDto);
+    void addProject(ProjectDto dto);
+
+    void updateProject(ProjectDto dto);
 
     void deleteProject(Long id);
 
-    List<ProjectDto> getAll();
+    List<ProjectDto> getAllProjects();
 
-    List<ProjectDto> getByClient(Long clientId);
+    ProjectDto searchProject(Long id);
+
+    List<ProjectDto> getProjectsByClient(Long clientProfileId);
+
+    List<ProjectDto> getProjectsByStatus(String status);
+
+    List<ProjectDto> searchProjectsByTitle(String title);
+
 }
